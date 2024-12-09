@@ -1,5 +1,5 @@
+"use client"
 import React from "react";
-
 export default function Booking() {
     return (
         <section className="bg-gradient-to-r bg-gray-100 py-10 ">

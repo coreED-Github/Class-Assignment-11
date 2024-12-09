@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link";
 interface Car {
     idNo: number;
@@ -68,12 +69,15 @@ interface Car {
   const CarCard:React.FC<CarCardProps>= ({car}) => {
     return (
      <div>
+     
       <div className="border rounded shadow-md bg-white">
+      <Link href="/Cart">
         <img
           src={car.imageUrl}
           alt={car.name}
           className="rounded"
         />
+        </Link> 
         <div className="flex flex-col justify-center items-center">
         <h1 className="text-blue-900 text-2xl font-bold mt-2">{car.name}</h1>
         <p className="text-green-600 font-bold">{car.price}</p>

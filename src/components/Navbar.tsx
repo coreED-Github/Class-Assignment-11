@@ -3,7 +3,7 @@ import { Bars3Icon } from '@heroicons/react/16/solid'
 import Link from 'next/link';
 import React from 'react'
 interface Props {
-    openNavbar: () => void;
+    openNavbar:() => void;
 };
 function Navbar({ openNavbar }: Props) {
 
@@ -13,7 +13,7 @@ function Navbar({ openNavbar }: Props) {
                 <div className='flex justify-between ml-10 items-center w-full mx-auto h-20'>
                     <h1 className='flex-0.6 cursor-pointer  text-3xl text-white font-bold'>
                         Rev
-                        <span className='text-yellow-500'>
+                        <span className='text-yellow-300'>
                             Motion
                         </span>
                     </h1>
@@ -21,10 +21,10 @@ function Navbar({ openNavbar }: Props) {
                             <Link href="./"><div className='nav-link'>Home</div></Link>
                <Link href="/Featured"><div className='nav-link'>Featured</div></Link>
                    <Link href="/Order"><div className='nav-link'>Order</div></Link>
-   <Link href="/Footer"><div className='nav-link'>Contact</div></Link>
+   <Link href="/Contact"><div className='nav-link'>Contact</div></Link>
                                                   
 <div onClick={openNavbar}>
-                        <Bars3Icon className='w-[2rem] md:hidden h-[2rem] cursor-pointer text-yellow-500' />
+                        <Bars3Icon className='w-[2rem] md:hidden h-[2rem] cursor-pointer text-white' />
                     </div>
                 </div>
             </div>

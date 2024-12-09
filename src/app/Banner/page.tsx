@@ -1,8 +1,9 @@
 "use client"
 import React from 'react'
-
 import Link from 'next/link'
 import TextEfact from '../TextEfect/page'
+
+
 
 export default function Banner() {
   return (

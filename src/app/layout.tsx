@@ -1,29 +1,21 @@
 "use client"
-
-import Footer from "./Footer/page";
+import Footer from "@/components/Footer";
 import "./globals.css";
-import MobileNav from "./MubNav/page";
-import Navbar from "./Navbar/page";
-import { useState } from "react";
-
-
+import MainNav from "@/components/MainNav";
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const [Nav, setNav] = useState(false)
-  const openNavbar = ()=> setNav(true)
-  const closeNavbar = ()=> setNav(false)
+ 
   return (
     <html lang="en">
       <body
       
       >
-       <MobileNav Nav={Nav} closeNavbar={closeNavbar}/>
-       <Navbar openNavbar={openNavbar} />
+       <MainNav/>
         {children}
-        <Footer/>
+       <Footer/>
       </body>
     </html>
   );

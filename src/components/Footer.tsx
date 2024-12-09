@@ -1,4 +1,5 @@
-import { DevicePhoneMobileIcon, EnvelopeIcon, EnvelopeOpenIcon } from '@heroicons/react/16/solid'
+"use client"
+import { DevicePhoneMobileIcon, EnvelopeIcon} from '@heroicons/react/16/solid'
 import { MapIcon } from '@heroicons/react/24/solid'
 import React from 'react'
 
